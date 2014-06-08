@@ -1,3 +1,5 @@
+UltimaDjango es una configuración básica mejorada de Django
+
 Repositorio
     -> read.me
     -> git.ignore
