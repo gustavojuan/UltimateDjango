@@ -58,3 +58,9 @@ He dividido las INSTALLED_APPS en 3 tuplas para tenerlo mejor organizado:
 
     INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 He usado Unipath para llamar al directorio de TEMPLATES_DIR
+
+
+Para usuarios con Windows puede que al instalar psycopg2 de un error. 
+En este caso instale en su entorno virtual:
+
+    pip install git+https://github.com/nwcell/psycopg2-windows.git@win32-py27#egg=psycopg2
