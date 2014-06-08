@@ -1,6 +1,7 @@
 UltimaDjango es una configuración básica mejorada de Django
 
 Repositorio
+
     -> read.me
     -> git.ignore
     -> REQUIREMENTS
@@ -29,10 +30,13 @@ Repositorio
                 -> base.py
                 -> production.py
                 -> staging.py
+                
+                
 
 La Carpeta REQUIREMENTS contiene las dependencias de cada ambiente de trabajo.
-    De esta manera tenemos un sistema de fácil instalacion de dependencias.
-    Ejemplo:
+De esta manera tenemos un sistema de fácil instalacion de dependencias.
+Ejemplo:
+
         pip install -r REQUIREMENTS/local.txt
         local.txt:
             -r base.txt
@@ -45,10 +49,11 @@ La Carpeta REQUIREMENTS contiene las dependencias de cada ambiente de trabajo.
 El archivo settings.py lo he dividio en los archivos que contienen la Carpeta SETTINGS.
 De esta manera puedo camviar el ambiente trabajo sólo llamando al runserser:
 Ejemplo:
+
     python manage.py runserser --settings=PROYECTO.settings.local
     base.py:
-        He dividido las INSTALLED_APPS en 3 tuplas para tenerlo mejor organizado
-        INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
-        He usado Unipath para llamar al directorio de TEMPLATES_DIR
+    
+He dividido las INSTALLED_APPS en 3 tuplas para tenerlo mejor organizado:
 
-
+    INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+He usado Unipath para llamar al directorio de TEMPLATES_DIR
